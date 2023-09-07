@@ -1,0 +1,35 @@
+.rightDiv{
+    background-image: url('../images/background.PNG');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+#rightTopDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.makeFlex{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+}
+.makeFlex>div{
+    width : 25%;
+    border: 1px solid yellow;
+    height: 10%;
+}
+.boxInnerDiv{
+    display: flex;
+    font-size: 12px;
+}
+.DeetsBox{
+    width:85%
+}
+.LogoBox{
+    border: 1px solid green;
+    width : 10%
+}
+.deetsInnerDivs{
+    display: flex;
+    justify-content: space-between;
+}

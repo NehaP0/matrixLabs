@@ -1,0 +1,16 @@
+.mainDivTop{
+    display: flex;
+}
+.mainDivTop>:nth-child(1){
+    width: 20%;
+    border: 1px solid red;
+}
+.mainDivTop>:nth-child(2){
+    width: 80%;
+    border: 1px solid green;
+}
+.mainDivBottom{
+    height : 68px;
+    /* margin-top: 913px; */
+    background-color: #F30050;
+}

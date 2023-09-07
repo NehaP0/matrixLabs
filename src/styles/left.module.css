@@ -1,0 +1,18 @@
+.leftDiv{
+    background-color: #292929;
+    color: white;
+}
+#leftHeading, #leftTokenBtn, #leftPairBtn, #leftSociaDiv{
+    display: flex;
+    justify-content: space-around;
+}
+#leftTokenBtn, #leftPairBtn{
+    width: 100%;
+    background-color: #292929;
+    color: white;
+    border: none;
+}
+#leftTokenBtn:hover, #leftPairBtn:hover{
+    background-color: #F30050;
+}
+
