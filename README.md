@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# DexScreener API Integration Project
+![Project Image](src/images/ScreenShot1.PNG)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Introduction](#introduction)
+- [API Integration](#api-integration)
+- [User Interface](#user-interface)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Search Functionality](#search-functionality)
+- [Data Fetching](#data-fetching)
+- [Limitations](#limitations)
 
-## Available Scripts
+## Introduction
+This project aims to create a web application that integrates with the DexScreener API to provide users with real-time data on decentralized exchange (DEX) pairs and tokens. Users can search for pairs or token addresses and receive detailed information about them.
 
-In the project directory, you can run:
+## API Integration
+We utilize the following endpoints from the DexScreener API:
+- `GET https://api.dexscreener.com/latest/dex/tokens/:tokenAddresses`
+- `GET https://api.dexscreener.com/latest/dex/search/?q=:query`
+Please refer to the [DexScreener API Reference](https://docs.dexscreener.com/api/reference) for detailed information on these endpoints.
 
-### `npm start`
+## User Interface
+The project's user interface has been designed according to the specifications provided in Figma. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- **React.js**: Front-end library for building user interfaces.
+- **Vanilla CSS**: Custom styling for the user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+To run this project locally, follow these steps:
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using your preferred package manager (e.g., npm or yarn).
+4. Start the development server.
+```bash
+git clone https://github.com/NehaP0/matrixLabs.git
+cd matrixLabs
+npm install
+npm start
+```
 
-### `npm test`
+## Usage
+Users can access the web application through their browsers. Upon loading, they will be presented with a user-friendly interface to interact with the DexScreener API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Search Functionality
+- Users can input either a pair or token address in the search bar.
+- The application will make calls to the DexScreener API to fetch the relevant data.
+- Results will be displayed on the interface, providing detailed information about the pair/token.
 
-### `npm run build`
+## Data Fetching
+All data required for the website is fetched dynamically from the DexScreener API. The application handles the fetching and rendering of data according to user input.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Limitations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please note the following limitations:
+-The application relies on the availability and reliability of the DexScreener API. Any downtime or changes to the API may affect functionality.
+-The project's search functionality is designed for specific use cases and may not cover all possible scenarios.
