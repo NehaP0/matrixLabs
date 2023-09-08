@@ -3,14 +3,28 @@
 }
 .mainDivTop>:nth-child(1){
     width: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .mainDivTop>:nth-child(2){
     width: 80%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .mainDivBottom{
     height : 68px;
     /* margin-top: 913px; */
     background-color: #F30050;
+}
+
+
+@media screen and (max-width: 390px) {
+    .mainDivTop{
+        display: block;
+    }
+    .mainDivTop>:nth-child(1), .mainDivTop>:nth-child(2){
+        width: 100%;
+        /* border: 1px solid yellow; */
+    }
+    .mainDivBottom{
+        height : 43px
+    }
 }

@@ -1,6 +1,9 @@
 .leftDiv{
     background-color: #292929;
-    color: white;
+    color: #FFFFFF;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
 }
 #leftHeading, #leftTokenBtn, #leftPairBtn, #leftSociaDiv{
     display: flex;
@@ -9,10 +12,38 @@
 #leftTokenBtn, #leftPairBtn{
     width: 100%;
     background-color: #292929;
-    color: white;
     border: none;
+    height: 65px;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    font-weight: bold;
 }
 #leftTokenBtn:hover, #leftPairBtn:hover{
     background-color: #F30050;
+}
+#nftify{
+    font-family: 'Pacifico';
+    font-weight: 400;
+    font-size: 32px;
+}
+#leftSociaDiv{
+    margin-bottom: 20px;
+}
+#leftHeading{
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 390px){
+    #leftSociaDiv{
+        display: none;
+    }
+    .leftDiv{
+        background-image: url('../images/background.PNG');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+    }
 }
 

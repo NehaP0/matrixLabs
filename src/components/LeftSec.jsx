@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
 import styles from '../styles/left.module.css'
+import { MdToken } from "react-icons/md";
+import { TbPhotoHexagon, TbBrandFacebook } from "react-icons/tb"
+import { PiExcludeSquareThin } from "react-icons/pi"
+import { AiFillFacebook } from "react-icons/ai"
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+
+
+
 
 
 
@@ -22,28 +30,32 @@ const LeftSec = ({setSearchFor}) => {
         <div>
 
             <div id={styles.leftHeading}>
-              <div>Logo</div>
-              <div>nFTify</div>
+              <TbPhotoHexagon style={{marginTop:"1px", fontSize:"30px", marginTop:"15px"}}/>
+              <div id={styles.nftify}>NFTify</div>
             </div>
 
             <div>
               <button id={styles.leftTokenBtn} onClick={HandleTokenClick}>
-                <div>Token logo</div>
+                <MdToken style={{marginTop:"1px", fontSize:"24px"}}/>
                 <div>Token Address</div>
               </button>
               <button id={styles.leftPairBtn} onClick={HandlePairClick}>
-                <div>Pair logo</div>
+                <PiExcludeSquareThin style={{marginTop:"1px", fontSize:"24px"}}/>
                 <div>Pair Address</div>
               </button>
             </div>
-
+        </div>
             <div id={styles.leftSociaDiv}>
-              <div>facebook logo</div>
-              <div>linkdin logo</div>
-              <div>twitter logo</div>
+              {/* <TbBrandFacebook style={{marginTop:"1px", fontSize:"24px", backgroundColor:"#F30050"}}/> */}
+              <FaFacebookF style={{marginTop:"1px", fontSize:"24px", backgroundColor:"#F30050", padding:"4px", borderRadius:"5px"}}/>
+              <FaLinkedinIn style={{marginTop:"1px", fontSize:"24px", backgroundColor:"#F30050", padding:"4px", borderRadius:"5px"}}/>
+              <FaTwitter style={{marginTop:"1px", fontSize:"24px", backgroundColor:"#F30050", padding:"4px", borderRadius:"5px"}}/>
+
+              
+
             </div>
 
-        </div>
+        
 
     </div>
   )

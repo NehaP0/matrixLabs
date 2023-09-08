@@ -3,33 +3,157 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
+    padding: 20px;
+    padding-top: 10px;
 }
 #rightTopDiv{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
+
+
+#searchDiv{
+    width : 40%;
+    height : 20px;
+    border: 1px solid #FFFFFF;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding : 10px; 
+    font-family: 'Poppins';
+}
+#searchDiv input{
+    background: transparent;
+    border: none;
+    width : 80%;
+    color : #FFFFFF
+}
+#searchDiv input:focus{
+    outline: none;
+}
+#searchDiv input:focus::placeholder {
+    color: transparent;
+  }
+
+
+#connectbtn{
+    background-image: linear-gradient(to top right,#7C0F35, #581266);
+    width : 20%;
+    height : 45px;
+    border: none;
+    border-radius: 20px;
+    padding : 10px; 
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .makeFlex{
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid green; */
 }
 .makeFlex>div{
-    width : 25%;
-    border: 1px solid yellow;
-    height: 10%;
+    width : 23%;
+    /* border: 1px solid yellow; */
+    height: 160px;
+    margin: 5px;
+    background-color: #390554;
+    border-radius: 5px;
 }
 .boxInnerDiv{
     display: flex;
-    font-size: 12px;
+    padding: 8px;
+    /* border: 1px solid yellow; */
+    padding-right: 1px;
+    
 }
 .DeetsBox{
-    width:85%
+    width:75%;    
+    font-family: 'Poppins';
 }
 .LogoBox{
-    border: 1px solid green;
-    width : 10%
+    /* border: 1px solid green; */
+    width : 48px;
+    height: 48px;
+    margin-top: 46%;
+    border-radius: 100px;
+    background-color: #960252;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
 }
 .deetsInnerDivs{
     display: flex;
     justify-content: space-between;
+    /* border: 1px solid red; */
+    font-size: 10.8px;
+}
+.deetsInnerDivs>:nth-child(1){
+    /* border: 1px solid red; */
+    width : 30%;
+    word-wrap: break-word
+}
+.deetsInnerDivs>:nth-child(2){
+    /* border: 1px solid green; */
+    width: 50%;
+    word-wrap: break-word
+}
+.DeetsBox>p{
+    font-size: 14px;
+    font-weight: bold;
+}
+#rightBottomDiv>p{
+    font-size: 18px;
+    font-family: 'Work Sans';
+    color: #F7F9F9;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 390px){
+    .rightDiv{
+        height: 220vh;
+        padding: 0.5px;
+    }
+    .makeFlex{
+        display: block;
+    }
+    .makeFlex>div{
+        width : 90%;
+        /* border: 1px solid yellow; */
+    }
+
+    #rightTopDiv{
+        display: block;  
+        padding: 1px;
+    }
+    
+    #searchDiv{
+        width : 80%;
+        margin-bottom: 2px;
+    }
+    #connectbtn{
+        width : 85%;
+    }
+    .LogoBox{
+        margin-top: 30%;
+        margin-left: 2px;        
+    }
+    #rightBottomDiv>p{
+        font-size: 18px;
+        word-wrap: break-word
+    }
+    .boxInnerDiv{
+        display: flex;
+        padding: 2px;        
+    }
+    
 }
